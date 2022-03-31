@@ -1,0 +1,144 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block body %}
+    <div class="container">
+        <br>
+        <h3>Car Climate Questions</h4>
+        <br>
+
+        <fieldset class="form-group">
+            <p>(Question 1) How much C02 evert kilometre does the older model average petrol car on road in UK produce?</p>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    170g of CO2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    180g of CO2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    185g of CO2 <i class="fas fa-times" style="color: red;"></i>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    175g of CO2
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <br>
+            <p>(Question 2) Can driving a newer vehicle help reduce the emission of CO2?</p>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Yes <i class="fas fa-check" style="color: green;"></i>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    No
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <br>
+            <p>(Question 3) What month encourages people to substitute just one short car journey a day for a walk? </p>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    May <i class="fas fa-check" style="color: green;"></i>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    June 
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    July
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    August
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <br>
+            <p>(Question 4) Which three countries have sped ahead in bike transport?</p>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Netherlands, Spain and Denmark
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    England, Germany and Denmark <i class="fas fa-times" style="color:red"></i>
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Netherlands, Germany and Denmark
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Netherlands, Germany and Sweden
+                </label>
+            </div>
+        </fieldset>
+
+
+
+        <div>
+            <p>
+                <h6>Page 2 of 2</h6>
+                <br>
+                <h5>You got 2 / 4</h5>
+                <button class="btn btn-primary float-right" type="submit">Submit Answers</button>
+                
+                <!-- <h5>Type of session and location</h5> -->
+            </p>
+        </div>
+       
+        
+        <!-- <form method="post">
+            {% csrf_token %}
+            {{ form|crispy}}
+            {{ form.media }}
+
+            <br>
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </form> -->
+    </div>
+    <br>
+    <br>
+    <br>
+
+{% endblock %}
